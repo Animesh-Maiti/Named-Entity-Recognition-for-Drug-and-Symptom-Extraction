@@ -204,6 +204,9 @@ shutil.copytree(
 
 print("Model saved to Google Drive! ✅")
 
+------------------------------------------------------------------------------------------------------------------
+# Main application code
+
 pip install PyPDF2
 
 import gradio as gr
