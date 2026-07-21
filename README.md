@@ -4,6 +4,17 @@ An end-to-end Machine Learning pipeline designed to extract clinical entities—
 
 ---
 
+🌟 Key Features
+    Custom Token Alignment: Solves WordPiece subword tokenization shifts by masking sub-tokens with -100 during training.
+
+    Smart Entity Merging: Combines fragmented subword outputs (e.g., "Am" + "oxicillin") into unified entities.
+
+    Interactive UI: Built using Gradio for visual text highlighting, raw text previews, and summary tables.
+
+    Export Options: One-click CSV download for downstream clinical analysis.
+
+---
+
 ## 📸 System Overview & Results
 
 ### 1. Operational Workflow
@@ -18,7 +29,7 @@ The model processes uploaded clinical PDF reports in real time, highlighting ext
 
 | Highlighted Analysis View | Entity Summary Table |
 | :---: | :---: |
-| ![Highlighted Analysis UI](Highlighted Analysis UI.png) | ![Entity Summary Table](Entity Summary Table.png) |
+| ![Highlighted Analysis UI](ui_highlight.png) | ![Entity Summary Table](summary_table.png) |
 
 ---
 
@@ -44,4 +55,6 @@ The fine-tuned BioBERT model was trained across 3 epochs, reaching an overall **
 
    micro avg       0.85      0.90      0.87      9802
    macro avg       0.85      0.89      0.87      9802
-weighted avg       0.85      0.90      0.87      9802
+weighted avg       0.85      0.90      0.87      9802 
+
+
